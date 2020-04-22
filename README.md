@@ -13,12 +13,12 @@ In this repository a data engineering pipeline is built to analyze and classify 
 - [scikit-learn](https://pypi.org/project/scikit-learn/)
 
 ### 3. File Descriptions
-- **/app/run.py**: 
-- **/data/disaster_categories.csv**:
-- **/data/disaster_messages.csv**:
-- **/data/DisasterResponse.db**: 
-- **/data/process_data.py**: 
-- **/models/train_classifier.py**:
+- **/app/run.py**: The flask web app
+- **/data/disaster_categories.csv**: The labels of the messages
+- **/data/disaster_messages.csv**: The disaster messages
+- **/data/process_data.py**: ETL pipeline
+- **/data/DisasterResponse.db**: The database which is created during ETL
+- **/models/train_classifier.py**: MachineLearning pipeline
 
 ### 4. Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
