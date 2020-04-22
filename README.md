@@ -20,7 +20,7 @@ In this repository a data engineering pipeline is built to analyze and classify 
 - **/data/DisasterResponse.db**: The database which is created during ETL
 - **/models/train_classifier.py**: MachineLearning pipeline
 
-### 4. Instructions:
+### 4. Instructions
 1. Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL pipeline that cleans data and stores in database
