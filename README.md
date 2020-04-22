@@ -1,8 +1,8 @@
 # Udacity Data Science Nanodegree - Project 2
 This Repository contains the files for Udacity's Data Science Nanodegree Project 2.
 
-### 1. Motivation  
-Since I am a technical student who often looks for advice on Stackoverflow I would like to learn a little more about the users. Stackoverflow does not allow private communication between users thus no personal conversations between users take place. The goal of this Project is to get to know the users of Stackoverflow a little better.
+### 1. Summary  
+In this repository a data engineering pipeline is built to analyze and classify disaster text. The classifier can identify which type of support is needed bases on messages. The trained model is used in a web application.
 
 ### 2. Installations
 - [Python 3.X](https://www.python.org/downloads/)
@@ -12,15 +12,25 @@ Since I am a technical student who often looks for advice on Stackoverflow I wou
 - [nltk](https://pypi.org/project/nltk/)
 - [scikit-learn](https://pypi.org/project/scikit-learn/)
 
-
 ### 3. File Descriptions
-- **BlogPost.md**: A blog post about my finding of Stackoverflow's surveys
-- **StackOverFlow_Comparison.ipynb**: A Jupyter Notebook that keeps my calculations and results
+- **/app/run.py**: 
+- **/data/DisasterResponse.db**: 
+- **/data/process_data.py**:
+- **/models/train_classifier.py**:
 
-### 4. Findings
-- *Python* and *Javascript* are the most rapidly growing programming languages.
-- Older developers work from home more often than younger ones.
-- The better the English level in a country, the higher the probability they will visit Stackoverflow
+### 4. Instructions:
+1. Run the following commands in the project's root directory to set up your database and model.
+
+    - To run ETL pipeline that cleans data and stores in database
+        `python3 data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+    - To run ML pipeline that trains classifier and saves
+        `python3 models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+
+2. Run the following command in the app's directory to run your web app.
+    `python3 run.py`
+
+3. Go to http://0.0.0.0:3001/
+
 
 ### 5. Acknowledgements
-Thanks to [Figure Eight](https://figure-eight.com) who made their *Multilingual Disaster Response Messages* Dataset [availabe](https://appen.com/datasets/combined-disaster-response-data/).
+Thanks to [Figure Eight](https://figure-eight.com) who made their *Multilingual Disaster Response Messages* Dataset freely [availabe](https://appen.com/datasets/combined-disaster-response-data/).
