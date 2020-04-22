@@ -2,7 +2,7 @@
 This Repository contains the files for Udacity's Data Science Nanodegree Project 2.
 
 ### 1. Summary  
-In this repository a data engineering pipeline is built to analyze and classify disaster text. The classifier can identify which type of support is needed bases on messages. The trained model is used in a web application.
+In this repository a data engineering pipeline is built to analyze and classify disaster text. The hyper parameters of the *RandomForestClassifier* are optimized using *GridSearch* (including *Cross-Validation*). The classifier can identify which type of support is needed bases on messages. The trained model is used in a web application.
 
 ### 2. Installations
 - [Python 3.X](https://www.python.org/downloads/)
