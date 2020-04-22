@@ -14,8 +14,10 @@ In this repository a data engineering pipeline is built to analyze and classify 
 
 ### 3. File Descriptions
 - **/app/run.py**: 
+- **/data/disaster_categories.csv**:
+- **/data/disaster_messages.csv**:
 - **/data/DisasterResponse.db**: 
-- **/data/process_data.py**:
+- **/data/process_data.py**: 
 - **/models/train_classifier.py**:
 
 ### 4. Instructions:
